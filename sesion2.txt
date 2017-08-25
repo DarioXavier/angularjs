@@ -1,0 +1,24 @@
+snipped:
+angujarjs
+jhon papa
+
+Providers -> definir con angular
+
+.Config: inyectar provider y constantes
+
+.Run:acciones sobre los módulos, inyectar lo que necesitemos - controladores
+
+factory -> pasar datos
+
+CONTROLADOR
+- el controlador no debe manejar el DOM, solo debe ser manejado por directivas
+- no da formato a los valores, para estan los filtros
+- si la funcionalidad de un controlador se repite en varios, puede hacerse un servicio
+- manejar las entradas de los usuarios, interactuar con los servicios que hacen la lógica
+- interactuar cob los usuarios
+
+-inicializa el scope para mostrarlo en la vista
+- configurar las funciones en el scope para que hace algunas tareas
+
+$digest: proceso de escuchar todo el tiempo fir(;;)
+
