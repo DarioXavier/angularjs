@@ -3,7 +3,8 @@
 
     angular
         .module('myApp', [
-        'sumadorMdl'
+            'moduloSrvs',
+            'moduloCtrls'
     ]);
 
 }());
