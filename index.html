@@ -2,10 +2,16 @@
 <html ng-app="myApp">
     <head>
         <title>Sesion 3</title>
+
+        <!-- angular -->
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+
+        <!-- app module -->
         <script src="js/app/app.js"></script>
-        <script src="js\app\sumador\sumadorModule.js"></script>
-        <script src="js\app\sumador\sumadorController.js"></script>
+
+        <!-- sumar module -->
+        <script src="js/app/sumador/sumadorModule.js"></script>
+        <script src="js/app/sumador/sumadorController.js"></script>
 
     </head>
     <body>
@@ -13,10 +19,9 @@
         <h1>Sesion 3</h1>
 
         {{2 + 2}}
-        
-        <br>
 
         <div ng-controller="controlador">
+            <br>
             {{ msg }}
         </div>
 
