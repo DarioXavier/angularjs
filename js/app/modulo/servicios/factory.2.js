@@ -7,13 +7,15 @@
 
     function myFctry2(){
 
-        var personas = [{name:'Pablo',edad:'10'},
-                        {name:'Maria',edad:'33'},
-                        {name:'Carla',edad:'52'},
-                        {name:'Marco',edad:'1'},
-                        {name:'Dario',edad:'66'},
-                        {name:'Xavier',edad:'32'},
-                        {name:'Jose',edad:'99'}];
+        var personas = [
+                {name:'Pablo', edad:'10'},
+                {name:'Maria', edad:'33'},
+                {name:'Carla', edad:'52'},
+                {name:'Marco', edad:'1'},
+                {name:'Dario', edad:'66'},
+                {name:'Xavier', edad:'32'},
+                {name:'Jose', edad:'99'}
+            ];
 
         return {
             people : personas,
