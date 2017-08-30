@@ -17,6 +17,7 @@ angular.module('MyApp').controller('MyCtrl3', function($scope){
         $scope.resp = $scope.num1 + $scope.num2;
     }
 
+    /*
     $scope.incrementar = function() {
         $scope.num1 = $scope.num1 + 1;
     }
@@ -24,5 +25,6 @@ angular.module('MyApp').controller('MyCtrl3', function($scope){
     $scope.restar = function() {
         $scope.num1 = $scope.num1 + 1;
     }
+    */
 
 });
