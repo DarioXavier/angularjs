@@ -1,59 +1,42 @@
 <!DOCTYPE html>
 <html ng-app="myApp">
-<head>
-    <title>Sesion 4</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
-    <script src="\js\app\app.js"></script>
-    <!-- modulos -->
-    <script src="\js\app\modulo\modulo.controladores.js"></script>
-    <script src="\js\app\modulo\modulo.servicios.js"></script>
-    <script src="\js\app\modulo\modulo.controladores.js"></script>
-    <!-- servicios -->
-    <script src="\js\app\modulo\servicios\factory.1.js"></script>
-    <script src="\js\app\modulo\servicios\factory.2.js"></script>
-    <!-- controladores -->
-    <script src="\js\app\modulo\controladores\controlador.1.js"></script>
-    <script src="\js\app\modulo\controladores\controlador.2.js"></script>
-    <script src="\js\app\modulo\controladores\controlador.3.js"></script>
+    <head>
+        <title>Sesion 4</title>
 
-</head>
-<body>
+        <!-- angular -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular-resource.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular-route.js"></script>
 
-<h1>Sesion 4</h1>
+        <!-- app module -->
+        <script src="js\app.js"></script>
 
+        <!-- rutas -->
+        <script src="js\rutas.js"></script>
 
-{{2 + 2}}
+        <!-- primer controlador -->
+        <script src="js\app\primero\primer.controller.js"></script>
 
-<br>
+        <!-- segundo controlador -->
+        <script src="js\app\segundo\segundo.controller.js"></script>
 
-<div ng-controller="myCtrl1 as ctrl1">
-    <br>
-    {{ctrl1.msj}}
-</div>
+    </head>
+    <body>
 
+        <h1>Sesion 7</h1>
 
-<div ng-controller="myCtrl2 as ctrl2">
-    <br>
-    {{ctrl2.msj2}}
-    <h4>Lista de Personas Ctrl 2</h4>
-    <div ng-repeat="persona in ctrl2.personas">
-        {{persona.name}} {{persona.edad}}
-    </div>
-</div>
+        {{2 + 2}}
 
-<div ng-controller="myCtrl3 as ctrl3">
-    <br>
+        <ul>
+            <li><a href="/">Inicio</a></li>
+            <li><a href="#!/ruta1">Opcion 1</a></li>
+            <li><a href="#!/ruta2">Primer Ctrl</a></li>
+            <li><a href="#!/ruta3">Segundo Ctrl</a></li>
+            <li><a href="#!/ruta3/123">Parámetros</a></li>
+        </ul>
 
-    <h4>Lista de Personas Ctrl 3</h4>
-    <div ng-repeat="persona in ctrl3.personas">
-        {{persona.name}} {{persona.edad}}
-        <button type="button" ng-click="ctrl3.borrar(persona)">Borrar</button></li>
-    </div>
+        <br>
+        <div ng-view></div>
 
-</div>
-
-
-
-
-</body>
+    </body>
 </html>

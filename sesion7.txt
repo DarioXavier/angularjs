@@ -1,0 +1,25 @@
+Sesion5 ToDoAsk
+Sesion6 Constantes
+Sesion7 Rutas
+
+Solo puedo inyectar en un config constant y provider.
+
+bower install -save angular-route
+-save agrega las dependencias al archivo de configuración de bower
+
+.wen: definir una ruta específica
+.otherwise: ruta por defecto
+
+template: escribir el código directamente <h1>hola</h1>
+templateURL: ruta del archivo ejemplo.html
+
+ng-algo: esperan los procesos de angular porque html puede ir muy rápido
+
+Además del template dentro de when vamos a manejar:
+                                                    controller:"myController"
+                                                    controllerAs:"myCtrl"
+
+
+Enviar parámetros: .when('/ruta/:parametro',{})
+
+$routeParams: enviar parámetros
