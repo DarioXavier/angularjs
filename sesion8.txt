@@ -1,0 +1,21 @@
+sesion8 
+
+JS asíncrono: deslace de tiempo y ejecución,cuando se lema a una función y el JS asume 
+
+que se ejecutó y no espera el resultado. (peticiones al servidor)
+
+
+Promesa:tiene dos estados se resuelve o se rechaza
+
+En una promesa vamos a definir una promesa que tendrá como entrada sus dos estados: 
+
+resolve o rejected
+
+var
+
+resolve();
+reject();
+
+Promise.all: devulve el resultado de todas las promesas en un arreglo
+
+Promise.race: devulve el resultado de la primera respesta en ser resulta
