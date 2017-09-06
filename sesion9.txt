@@ -1,0 +1,40 @@
+sesion9
+
+API: Interfaz de Programación de Aplicaciones
+
+SOAP:
+-llegó primero Microsoft
+-la data se hace accesible como servicio
+
+
+REST:
+-se basa totalmente en verbos http
+-data son recursos
+-se basa en JSON
+
+
+Verbos http
+GET: leer datos
+POST: crear un recurso
+PUT: actualizar un recurso
+DELETE: borrar un recurso
+
+Angular: framework web de lado del cliente
+
+$http: servicio rest
+-todo loq ue retorna $http es una promesa
+-se le inyecta un objeto para pasar el verbo http, configurar la petición ajax
+
+shortcut:
+$http.jsonp: orígines cruzados
+$http.patch: actualizar parcialmente un recurso (solo un atributo)
+
+
+
+XMLHttpRequest: objeto nativo de angular, hace la magia de la comunicación
+
+
+$resorce
+-hay que instalarlo
+-trae funciones predeterminadas get, post, delete
+-podemos definir parámetros en las rutas

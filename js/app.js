@@ -2,8 +2,12 @@
     'use strict';
 
     angular
-        .module('myApp', [])
+        .module('myApp', [
+            'serviceModule'
+        ])
         
+
+        /*
         .controller('myController', function($scope, $timeout){
             
             init();
@@ -22,7 +26,7 @@
                     })
                     .catch(function(err) {
                         console.log('Error');
-                    });*/
+                    });
                 //tercer();
                 comprobarPromise()
                     .then(function(resp){
@@ -73,7 +77,7 @@
                 console.log('tercer '+obj);
                 
                 return obj;
-            }*/
+            }
 
             function cuarto(obj) {
                 if (obj == 4) {
@@ -102,5 +106,6 @@
             }
 
         });
+        */
 
 }());
