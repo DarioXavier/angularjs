@@ -1,0 +1,18 @@
+Bower
+
+sesion10
+
+Formularios
+
+Los elementos van a tene run estado
+$valid
+$invalid
+$dirty
+$pristine
+$submited
+
+
+ng-show
+
+ng-message
+inyectar
