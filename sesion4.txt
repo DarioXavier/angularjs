@@ -1,3 +1,8 @@
+Sesión 4
+
+Controladores: scope de los controladores, init() - Servicios: Factory - ng-repeat
+
+
 Servicios
 
 -Factorys: necesitaun return
