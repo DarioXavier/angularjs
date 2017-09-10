@@ -1,68 +1,65 @@
 <!DOCTYPE html>
 <html ng-app="myApp">
-<head>
-    <title>Sesión 4</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <title>Sesión 4</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- angularjs -->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.js"></script>
+        <!-- angularjs -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.js"></script>
 
-    <!-- app module -->
-    <script src="\js\app\app.js"></script>
+        <!-- app module -->
+        <script src="\js\app\app.js"></script>
 
-    <!-- modulos -->
-    <script src="\js\app\modulo\modulo.controladores.js"></script>
-    <script src="\js\app\modulo\modulo.servicios.js"></script>
-    <script src="\js\app\modulo\modulo.controladores.js"></script>
+        <!-- modulos -->
+        <script src="\js\app\modulo\modulo.controlllers.js"></script>
+        <script src="\js\app\modulo\modulo.services.js"></script>
 
-    <!-- servicios -->
-    <script src="\js\app\modulo\servicios\factory.1.js"></script>
-    <script src="\js\app\modulo\servicios\factory.2.js"></script>
+        <!-- servicios -->
+        <script src="\js\app\modulo\servicios\factory.1.js"></script>
+        <script src="\js\app\modulo\servicios\factory.2.js"></script>
 
-    <!-- controladores -->
-    <script src="\js\app\modulo\controladores\controlador.1.js"></script>
-    <script src="\js\app\modulo\controladores\controlador.2.js"></script>
-    <script src="\js\app\modulo\controladores\controlador.3.js"></script>
+        <!-- controladores -->
+        <script src="\js\app\modulo\controladores\controlador.1.js"></script>
+        <script src="\js\app\modulo\controladores\controlador.2.js"></script>
+        <script src="\js\app\modulo\controladores\controlador.3.js"></script>
 
-</head>
-<body>
+    </head>
+    <body>
 
-<h1>Sesión 4</h1>
+        <h1>Sesión 4</h1>
 
+        {{2 + 2}}
 
-{{2 + 2}}
+        <div ng-controller="myController1 as ctrl1">
+            <br>
+            <h3>Cotrolador 1</h3>
+            {{ctrl1.msj}}
+        </div>
 
-<br>
-
-<div ng-controller="myCtrl1 as ctrl1">
-    <br>
-    {{ctrl1.msj}}
-</div>
-
-
-<div ng-controller="myCtrl2 as ctrl2">
-    <br>
-    {{ctrl2.msj2}}
-    <h4>Lista de Personas Ctrl 2</h4>
-    <div ng-repeat="persona in ctrl2.personas">
-        {{persona.name}} {{persona.edad}}
-    </div>
-</div>
-
-<div ng-controller="myCtrl3 as ctrl3">
-    <br>
-
-    <h4>Lista de Personas Ctrl 3</h4>
-    <div ng-repeat="persona in ctrl3.personas">
-        {{persona.name}} {{persona.edad}}
-        <button type="button" ng-click="ctrl3.borrar(persona)">Borrar</button></li>
-    </div>
-
-</div>
+        <div ng-controller="myController2 as ctrl2">
+            <br>
+            <h3>Cotrolador 2</h3>
+            {{ctrl2.msj2}}
+        </div>
 
 
+        <div ng-controller="myController2 as ctrl2">
+            <h3>Lista de Personas Ctrl 2</h3>
+            <div ng-repeat="persona in ctrl2.personas">
+                {{persona.name}} {{persona.lastname}} {{persona.edad}}
+            </div>
+        </div>
+
+        <div ng-controller="myCtrl3 as ctrl3">
+            <h3>Lista de Personas Ctrl 3</h3>
+            <div ng-repeat="persona in ctrl3.personas">
+                {{persona.name}} {{persona.lastname}}
+                <button type="button" ng-click="ctrl3.borrar(persona)">Borrar</button></li>
+            </div>
+
+        </div>
 
 
-</body>
+    </body>
 </html>

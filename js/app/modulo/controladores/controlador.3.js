@@ -1,7 +1,6 @@
 (function(){
     'use strict';
 
-
     angular
         .module('moduloCtrls')
         .controller('myCtrl3', myCtrl3)
