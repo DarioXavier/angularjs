@@ -5,7 +5,7 @@ angular.module('MyApp').controller('MyCtrl', function($scope){
 });
 
 angular.module('MyApp').controller('MyCtrl2', function($scope){
-    //$scope.sms = 'Hola mundo :D';
+    //$scope.sms = 'Hola mundo :D'; controlador aninado
 });
 
 angular.module('MyApp').controller('MyCtrl3', function($scope){
@@ -16,15 +16,5 @@ angular.module('MyApp').controller('MyCtrl3', function($scope){
     $scope.sumar = function() {
         $scope.resp = $scope.num1 + $scope.num2;
     }
-
-    /*
-    $scope.incrementar = function() {
-        $scope.num1 = $scope.num1 + 1;
-    }
-
-    $scope.restar = function() {
-        $scope.num1 = $scope.num1 + 1;
-    }
-    */
 
 });

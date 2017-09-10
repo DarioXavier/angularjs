@@ -1,12 +1,16 @@
-snipped:
-angujarjs
-jhon papa
+Sesión 2
+
+Controladores
+
+
+snipped: angujarjs, autor: jhon papa
+
 
 Providers -> definir con angular
 
 .Config: inyectar provider y constantes
 
-.Run:acciones sobre los módulos, inyectar lo que necesitemos - controladores
+.Run: acciones sobre los módulos, inyectar lo que necesitemos - controladores
 
 factory -> pasar datos
 
