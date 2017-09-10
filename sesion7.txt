@@ -1,6 +1,9 @@
-Sesion5 ToDoAsk
-Sesion6 Constantes
-Sesion7 Rutas
+Sesion7
+
+Rutas - ng-route
+
+
+Es necesario instalar ng-route
 
 Solo puedo inyectar en un config constant y provider.
 

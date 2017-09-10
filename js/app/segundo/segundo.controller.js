@@ -2,7 +2,7 @@
     'use strict'
 
     angular
-        .module('myApp')
+        .module('segundoCtrlMdl') //myApp
         .controller('segundoController', segundoController)
 
         function segundoController($routeParams){

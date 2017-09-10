@@ -10,13 +10,13 @@
         function myConfig($routeProvider){
             $routeProvider
             .when('/', {
-                template: '<h2>Hola Mundo Inicio</h2>'
+                template: '<div><h3>Hola Mundo Inicio</h3></div>'
             })
             .when('/ruta1', {
-                template: '<h2>Hola Mundo Ruta </h2> template'
-            })
+                template: '<div><h3>Hola Mundo Ruta 1</h3> template</div>'
+            })/*
             .when('/ruta2', {
-                templateUrl: 'js/app/primero/primero.html', 
+                templateUrl: 'js/app/primer/primer.html', 
                 controller: 'primerController',
                 controllerAs: 'ctrl1'
             })
@@ -25,11 +25,11 @@
                 controller: 'segundoController',
                 controllerAs: 'ctrl2'
             })
-            .when('/ruta3/:num', {
+            .when('/ruta4/:num', {
                 templateUrl: 'js/app/segundo/segundo.html',
                 controller: 'segundoController',
                 controllerAs: 'ctrl2'
-            })
+            })*/
             .otherwise('#!/')
         }
 

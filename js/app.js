@@ -3,6 +3,8 @@
 
     angular
         .module('myApp', [
-            'ngRoute'
+            'ngRoute',
+            'segundoCtrlMdl',
+            'primerCtrlMdl'
         ]);
 }());
