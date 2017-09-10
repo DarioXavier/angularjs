@@ -3,7 +3,7 @@
     <head>
         <title>Sesión 5</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
 
         <!-- angularjs -->
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.js"></script>
@@ -23,7 +23,7 @@
         <script src="js\app\modulo\servicios\servicios.module.js"></script>
         <script src="js\app\modulo\servicios\task.factory.service.js"></script>
 
-        <!-- task controlles -->
+        <!-- task controllers -->
         <script src="js\app\modulo\controladores\controladores.module.js"></script>
         <script src="js\app\modulo\controladores\task.controller.js"></script>
 
@@ -39,26 +39,48 @@
         {{2 + 3}}
 
         <div class="container col-xs-12">
-            <divng-controller="taskCtrl">
+            <div ng-controller="taskCtrl as taskCtrl">
+                <div class="form-group col-xs-6 form-inline">
+                    <h3>Nueva tarea</h3>
+                    <p>
+                        <input  class="form-control" type="text" name="task" ng-model="taskCtrl.newTaskName" placeholder="Nueva Tarea">
+                        <button type="button" class="btn btn-default btn-s" ng-click="taskCtrl.add()">
+                            <span class="glyphicon glyphicon-floppy-disk" 
+                                  ng-class="{'glyphicon-floppy-save darkGreen':taskCtrl.isAdd}"></span>
+                        </button>
+                    </p>
+                    <br>
+                    <p>{{taskCtrl.newTaskName}}</p>
+                    <br>
+
+                </div>
+
                 <div class="form-group col-xs-6">
-                    <h3>Task</h3>
-                    <input  class="form-control" type="text" name="task" ng-model="taskCtrl.newTask">
-                    <button type="button" class="btn btn-default btn-xs" ng-click="taskCtrl.add()">Add</button>
-                    <br>
-                    {{taskCtrl.newTask}}
-                    <br>
-
-                </div>
-
-                <div class="form-group col-xs-12">
                     <h3>Lista de Tareas</h3>
-                    <div ng-class="{check:tarea.isCheck}" ng-repeat="tarea in taskCtrl.tasks">
-                            {{ tarea.name }} {{tarea.isCheck}}
-                            <button type="button" class="btn btn-success btn-xs" ng-click="taskCtrl.check(tarea)">Check</button>
-                            <!--<button type="button" class="btn btn-warning btn-xs" ng-click="taskCtrl.editar(tarea)">Edit</button>-->
-                            <button type="button" class="btn btn-danger btn-xs" ng-click="taskCtrl.remove(tarea)">Borr</button>
-                    </div> 
+                    <table class="table table-sm table-inverse col-xs-6">
+                        <tbody>
+                        <tr ng-repeat="tarea in taskCtrl.tasks">
+                            <td>
+                                <div class="col-xs-6 col-s-8 col-md-9 col-lg-10" ng-class="{check:tarea.isCheck}" >
+                                    {{ tarea.name }}
+                                </div>
+                                <div class="col-xs-6 col-s-4 col-md-3 col-lg-2">
+                                    <button type="button" class="btn btn-lg btn-default btn-xs" ng-click="taskCtrl.check(tarea)">
+                                        <span class="glyphicon glyphicon-check green"></span>
+                                    </button>
+                                    <button type="button" class="btn btn-lg btn-default btn-xs" ng-click="taskCtrl.edit(tarea)">
+                                        <span class="glyphicon glyphicon-pencil blue"></span>
+                                    </button>
+                                    <button type="button" class="btn btn-lg btn btn-default btn-xs" ng-click="taskCtrl.remove(tarea)">
+                                        <span class="glyphicon glyphicon-trash red"></span>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
                 </div>
+                
             </div>
         </div>
 

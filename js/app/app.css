@@ -1,4 +1,20 @@
 .check {
     text-decoration: line-through;
-    /*text-decoration-color: rgba(100, 255, 1, 1);*/
+    text-decoration-color: rgb(255, 208, 19);
+}
+
+.green {
+    color: rgb(26, 153, 35);
+}
+
+.red {
+    color: rgb(184, 39, 39);
+}
+
+.blue {
+    color: rgb(56, 116, 150);
+}
+
+.darkGreen {
+    color: rgb(0, 81, 1);
 }

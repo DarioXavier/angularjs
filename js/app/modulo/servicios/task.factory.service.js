@@ -17,21 +17,29 @@
         return { 
             tasks : tareas,
             remove : remove,
-            add : add
+            add : add,
+            edit : edit
         }
 
         function remove(obj){
             console.log('obj ftry', obj);
-            var index = personas.indexOf(obj);
+            var index = tareas.indexOf(obj);
             console.log('index ftry', index);
-            personas.splice(index, 1);
-            console.log('personas ftry',personas);
+            tareas.splice(index, 1);
         }
 
         function add(obj){
             console.log(obj);
-            refresco.unshift(obj);
-            console.log('refresco', refresco);
+            tareas.unshift(obj); //añadir un elemento al inicio del arreglo
+            console.log('refresco', tareas);
+        }
+
+        function edit(oldObj, newObj){
+            console.log('oldObj ftry', oldObj);
+            console.log('newObj ftry', newObj);
+            var index = tareas.indexOf(oldObj);
+            console.log('index oldObj ftry', index);
+            tareas[index] = newObj;
         }
 
     }
