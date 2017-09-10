@@ -5,14 +5,11 @@
         .module('moduloTaskSrvs')
         .factory('taskFtry', taskFtry)
 
-    function taskFtry(){
+        taskFtry.$inject = ['TASKS']
 
-        var tareas = [
-                {name:'despertar'},
-                {name:'desayunar'},
-                {name:'ir al curso'},
-                {name:'crear una rama'}
-            ];
+    function taskFtry(TASKS){
+
+        var tareas = TASKS;
 
         return { 
             tasks : tareas,

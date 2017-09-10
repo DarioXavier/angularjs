@@ -4,7 +4,8 @@
     angular
         .module('taskModule', [
             'moduloTaskCtrls',
-            'moduloTaskSrvs'
+            'moduloTaskSrvs',
+            'moduloTaskCnstns'
 
         ]);
 })();

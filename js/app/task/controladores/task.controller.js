@@ -5,7 +5,7 @@
         .module('moduloTaskCtrls')
         .controller('taskCtrl', taskCtrl)
 
-    taskCtrl.$inject = ['taskFtry'];
+        taskCtrl.$inject = ['taskFtry'];
 
     function taskCtrl(taskFtry){
         

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html ng-app="myApp">
     <head>
-        <title>Sesión 5</title>
+        <title>Sesión 6</title>
         <meta charset="UTF-8">
         <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
 
@@ -17,15 +17,19 @@
         <script src="js\app\app.js"></script>
 
         <!-- task module -->
-        <script src="js\app\modulo\task.module.js"></script>
+        <script src="js\app\task\task.module.js"></script>
 
         <!-- task services -->
-        <script src="js\app\modulo\servicios\servicios.module.js"></script>
-        <script src="js\app\modulo\servicios\task.factory.service.js"></script>
+        <script src="js\app\task\servicios\servicios.module.js"></script>
+        <script src="js\app\task\servicios\task.factory.service.js"></script>
 
         <!-- task controllers -->
-        <script src="js\app\modulo\controladores\controladores.module.js"></script>
-        <script src="js\app\modulo\controladores\task.controller.js"></script>
+        <script src="js\app\task\controladores\controladores.module.js"></script>
+        <script src="js\app\task\controladores\task.controller.js"></script>
+
+        <!-- task constantes -->
+        <script src="js\app\task\constantes\constantes.module.js"></script>
+        <script src="js\app\task\constantes\tasks.constant.js"></script>
 
         <!-- task css -->
         <link rel="stylesheet" href="js\app\app.css">
@@ -34,9 +38,9 @@
     </head>
     <body>
 
-        <h1>Sesión 5</h1>
+        <h1>Sesión 6</h1>
 
-        {{2 + 3}}
+        {{3 + 3}}
 
         <div class="container col-xs-12">
             <div ng-controller="taskCtrl as taskCtrl">

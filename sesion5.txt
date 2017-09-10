@@ -1,4 +1,0 @@
-Sesión 5
-
-Add, remove, edit ,To do Task - ng-class - ng-click - agregar atributos
-
