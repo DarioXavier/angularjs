@@ -1,6 +1,6 @@
 Sesión 2
 
-Controladores
+Controlador - $scope - ng-controller
 
 
 snipped: angujarjs, autor: jhon papa
