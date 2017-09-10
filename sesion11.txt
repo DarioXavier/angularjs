@@ -1,0 +1,19 @@
+sesion11
+
+Directivas
+
+
+Return de la función constructora:
+-restrict: como vvamos a instanciar
+    A - Atributo:
+    E - Etiqueta:
+    C - Clase:
+    M - Comentario:
+-template: referencia a un al html
+-templateUrl: referencia a un archivo
+
+
+Declarar una directiva en: camel case (infoBook)
+Usar una directiva e: sake case (info-book)
+
+.config - providers y constants
