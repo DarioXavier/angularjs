@@ -1,61 +1,65 @@
 <!DOCTYPE html>
 <html ng-app="myApp">
     <head>
-        <title>Sesión 4</title>
+        <title>Sesión 5</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- angularjs -->
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.js"></script>
 
+        <!-- bootstrap module -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
         <!-- app module -->
         <script src="js\app\app.js"></script>
 
-        <!-- servicios -->
-        <script src="js\app\modulo\servicios\servicios.module.js"></script>
-        <script src="js\app\modulo\servicios\factory1.service.js"></script>
-        <script src="js\app\modulo\servicios\factory2.service.js"></script>
+        <!-- task module -->
+        <script src="js\app\modulo\task.module.js"></script>
 
-        <!-- controladores -->
+        <!-- task services -->
+        <script src="js\app\modulo\servicios\servicios.module.js"></script>
+        <script src="js\app\modulo\servicios\task.factory.service.js"></script>
+
+        <!-- task controlles -->
         <script src="js\app\modulo\controladores\controladores.module.js"></script>
-        <script src="js\app\modulo\controladores\myController1.controller.js"></script>
-        <script src="js\app\modulo\controladores\myController2.controller.js"></script>
-        <script src="js\app\modulo\controladores\myController3.controller.js"></script>
+        <script src="js\app\modulo\controladores\task.controller.js"></script>
+
+        <!-- task css -->
+        <link rel="stylesheet" href="js\app\app.css">
+
 
     </head>
     <body>
 
-        <h1>Sesión 4</h1>
+        <h1>Sesión 5</h1>
 
-        {{2 + 2}}
+        {{2 + 3}}
 
-        <div ng-controller="myController1 as ctrl1">
-            <br>
-            <h3>Cotrolador 1</h3>
-            {{ctrl1.msj}}
-        </div>
+        <div class="container col-xs-12">
+            <divng-controller="taskCtrl">
+                <div class="form-group col-xs-6">
+                    <h3>Task</h3>
+                    <input  class="form-control" type="text" name="task" ng-model="taskCtrl.newTask">
+                    <button type="button" class="btn btn-default btn-xs" ng-click="taskCtrl.add()">Add</button>
+                    <br>
+                    {{taskCtrl.newTask}}
+                    <br>
 
-        <div ng-controller="myController2 as ctrl2">
-            <br>
-            <h3>Cotrolador 2</h3>
-            {{ctrl2.msj2}}
-        </div>
+                </div>
 
-
-        <div ng-controller="myController2 as ctrl2">
-            <h3>Lista de Personas Ctrl 2</h3>
-            <div ng-repeat="persona in ctrl2.personas">
-                {{persona.name}} {{persona.lastname}} {{persona.edad}}
+                <div class="form-group col-xs-12">
+                    <h3>Lista de Tareas</h3>
+                    <div ng-class="{check:tarea.isCheck}" ng-repeat="tarea in taskCtrl.tasks">
+                            {{ tarea.name }} {{tarea.isCheck}}
+                            <button type="button" class="btn btn-success btn-xs" ng-click="taskCtrl.check(tarea)">Check</button>
+                            <!--<button type="button" class="btn btn-warning btn-xs" ng-click="taskCtrl.editar(tarea)">Edit</button>-->
+                            <button type="button" class="btn btn-danger btn-xs" ng-click="taskCtrl.remove(tarea)">Borr</button>
+                    </div> 
+                </div>
             </div>
-        </div>
-
-        <div ng-controller="myController3 as ctrl3">
-            <h3>Lista de Personas Ctrl 3</h3>
-            <div ng-repeat="persona in ctrl3.personas">
-                {{persona.name}} {{persona.lastname}}
-                <button type="button" ng-click="ctrl3.borrar(persona)">Borrar</button></li>
-            </div>
-
         </div>
 
 

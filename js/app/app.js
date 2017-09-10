@@ -3,8 +3,7 @@
 
     angular
         .module('myApp', [
-            'moduloSrvs',
-            'moduloCtrls'
-    ]);
+            'taskModule'
+        ]);
 
 }());
