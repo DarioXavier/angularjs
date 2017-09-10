@@ -9,20 +9,18 @@
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.js"></script>
 
         <!-- app module -->
-        <script src="\js\app\app.js"></script>
-
-        <!-- modulos -->
-        <script src="\js\app\modulo\modulo.controlllers.js"></script>
-        <script src="\js\app\modulo\modulo.services.js"></script>
+        <script src="js\app\app.js"></script>
 
         <!-- servicios -->
-        <script src="\js\app\modulo\servicios\factory.1.js"></script>
-        <script src="\js\app\modulo\servicios\factory.2.js"></script>
+        <script src="js\app\modulo\servicios\servicios.module.js"></script>
+        <script src="js\app\modulo\servicios\factory1.service.js"></script>
+        <script src="js\app\modulo\servicios\factory2.service.js"></script>
 
         <!-- controladores -->
-        <script src="\js\app\modulo\controladores\controlador.1.js"></script>
-        <script src="\js\app\modulo\controladores\controlador.2.js"></script>
-        <script src="\js\app\modulo\controladores\controlador.3.js"></script>
+        <script src="js\app\modulo\controladores\controladores.module.js"></script>
+        <script src="js\app\modulo\controladores\myController1.controller.js"></script>
+        <script src="js\app\modulo\controladores\myController2.controller.js"></script>
+        <script src="js\app\modulo\controladores\myController3.controller.js"></script>
 
     </head>
     <body>
@@ -51,7 +49,7 @@
             </div>
         </div>
 
-        <div ng-controller="myCtrl3 as ctrl3">
+        <div ng-controller="myController3 as ctrl3">
             <h3>Lista de Personas Ctrl 3</h3>
             <div ng-repeat="persona in ctrl3.personas">
                 {{persona.name}} {{persona.lastname}}

@@ -3,7 +3,7 @@
 
     angular
         .module('moduloCtrls')
-        .controller('myCtrl3', myCtrl3)
+        .controller('myController3', myCtrl3)
 
     myCtrl3.$inject = ['myFctry2'];
 
