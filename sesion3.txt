@@ -1,4 +1,6 @@
-Bower
+Sesi贸n 3
+
+Bower - git branchs - Organizaci贸n de ficheros
 
 
 [] carpeta -> index.html
@@ -31,14 +33,14 @@ vistas
 modulos
 directivas
 
-Organizaci髇 por ficheros:
-- aplicaciones peque馻s
+Organizaci贸n por ficheros:
+- aplicaciones peque帽as
 [Controladores]
 [Vistas]
 [Filtros]
 [directivas]
 
-Organizaci髇 por funcionalidad
+Organizaci贸n por funcionalidad
 
 $inyect inyecta las funcionalidades y fitros al controlador
 

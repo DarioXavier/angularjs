@@ -1,28 +1,42 @@
 <!DOCTYPE html>
 <html ng-app="myApp">
     <head>
-        <title>Sesion 3</title>
+        <title>Sesión 3</title>
 
         <!-- angular -->
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.js"></script>
 
         <!-- app module -->
         <script src="js/app/app.js"></script>
 
         <!-- sumar module -->
-        <script src="js/app/sumador/sumadorModule.js"></script>
-        <script src="js/app/sumador/sumadorController.js"></script>
+        <script src="js/app/sumador/sumador.module.js"></script>
+        <script src="js/app/sumador/sumador.controller.js"></script>
 
+        
     </head>
     <body>
 
-        <h1>Sesion 3</h1>
+        <h1>Sesión 3</h1>
 
-        {{2 + 2}}
+        {{1 + 2}}
 
         <div ng-controller="controlador">
             <br>
-            {{ msg }}
+            <h3>Controlador</h3>
+            {{ sms }}
+            <br>
+            <br>
+            <input type="number" ng-model="num1">
+            <br>
+            <input type="number" ng-model="num2">
+            <br>
+            <button type="button" ng-click="sumar()">sumar</button>
+
+            <br>
+            <br>
+            Resultado:  {{resp}}
+        
         </div>
 
     </body>
