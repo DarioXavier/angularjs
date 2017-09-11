@@ -1,8 +1,7 @@
-Bower
-
-sesion10
+Sesión 10
 
 Formularios
+
 
 Los elementos van a tene run estado
 $valid
