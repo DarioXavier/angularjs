@@ -1,7 +1,9 @@
 Sesión 10
 
-Formularios
+Formularios - ng-show - ng-required - ng-minlength - ng-maxlength - ng-model-options - myForm.$valid | json
 
+
+Es necesario inyectar ng-message
 
 Los elementos van a tene run estado
 $valid
@@ -9,6 +11,8 @@ $invalid
 $dirty
 $pristine
 $submited
+
+updateOn:'blur': espera que se selaga del cuadro de input para validar
 
 
 ng-show
