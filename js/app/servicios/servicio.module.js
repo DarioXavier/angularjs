@@ -2,6 +2,6 @@
     'use strict';
 
     angular
-        .module('serviceModule', [])
+        .module('httpSrvcMdl', [])
 
 }());

@@ -1,7 +1,7 @@
 <!DOCTYPE html5>
 <html ng-app="myApp">
     <head>
-        <title>Sesion 9</title>
+        <title>Sesión 9</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -13,22 +13,32 @@
         <script src="js/app.js"></script>
 
         <!-- service module -->
-        <script src="js/app/servicio.module.js"></script>
-        <script src="js/app/servicio.http.js"></script>
+        <script src="js/app/servicios/servicio.module.js"></script>
+        <script src="js/app/servicios/http.service1.js"></script>
+        <script src="js/app/servicios/http.service2.js"></script>
+        <script src="js/app/servicios/http.service3.js"></script>
 
-        <!-- controller -->
-        <script src="js/app/controller.http.js"></script>
+        <!-- controller module -->
+        <script src="js\app\controladores\controladores.module.js"></script>
+        <script src="js\app\controladores\http.controller.js"></script>
+
+        <!-- constants module -->
+        <script src="js\app\constantes\constantes.module.js"></script>
+        <script src="js\app\constantes\url.constant.js"></script>
 
 
     </head>
     <body>
         
-        <h1>Sesion 9</h1>
+        <h1>Sesión 9</h1>
 
-        {{2 + 2}}
+        {{5 + 4}}
 
-        <div ng-controller="serviceController as srvcCtrl">
-            
+        <h3>Datos</h3>
+        <div data-ng-controller="httpCtrl as httpCtrl">
+            <p ng-repeat="dato in httpCtrl.datos">
+                {{dato.title}}
+            </p>
         </div>
 
     </body>

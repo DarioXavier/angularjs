@@ -1,4 +1,7 @@
-sesion9
+Sesión 9
+
+Servicio http - $http - Acceso a constantes
+
 
 API: Interfaz de Programación de Aplicaciones
 
@@ -38,3 +41,7 @@ $resorce
 -hay que instalarlo
 -trae funciones predeterminadas get, post, delete
 -podemos definir parámetros en las rutas
+
+
+API películas: https://www.themoviedb.org/documentation/api
+API doc: https://developers.themoviedb.org/3/getting-started
