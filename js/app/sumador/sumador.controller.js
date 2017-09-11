@@ -18,7 +18,7 @@
 
         controlador.$inject = ['$scope'];
     function controlador($scope) {
-        scope.sms = 'Hola mundo';
+        $scope.sms = 'Hola mundo';
         $scope.num1 = 0;
         $scope.num2 = 0;
         $scope.resp = 0;
