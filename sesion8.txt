@@ -1,4 +1,4 @@
-sesion8 
+Sesión 8 
 
 JS asíncrono: deslace de tiempo y ejecución,cuando se lema a una función y el JS asume 
 

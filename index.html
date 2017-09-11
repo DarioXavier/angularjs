@@ -1,7 +1,7 @@
 <!DOCTYPE html5>
 <html ng-app="myApp">
     <head>
-        <title>Sesion 8</title>
+        <title>Sesión 8</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -12,21 +12,36 @@
         <!-- principal module -->
         <script src="js/app.js"></script>
 
-        <!-- controller module -->
-        <script src=""></script>
-        <script src=""></script>
+        <!-- controladores -->
+        <script src="js\controladores\promesa1.Controller.js"></script>
+        <script src="js\controladores\promesa2.Controller.js"></script>
+        <script src="js\controladores\promesa3.Controller.js"></script>
+        <script src="js\controladores\promesa4.Controller.js"></script>
+        <script src="js\controladores\promesa5.Controller.js"></script>
+        <script src="js\controladores\promesa6.Controller.js"></script>
+        <script src="js\controladores\promesa8.Controller.js"></script>
+        
 
 
     </head>
     <body>
         
-        <h1>Sesion 8</h1>
+        <h1>Sesión 8</h1>
 
-        {{2 + 2}}
+        {{5 + 3}}
 
-        <div ng-controller="myController as myCtrl">
-            
-        </div>
+        <br>
+        <br>
+
+        <!--<div ng-controller="myController as myCtrl"></div>-->
+        <!--<div ng-controller="promesa1Ctrl as prm1Ctrl">Problema en el orden de las funciones</div>-->
+        <!--<div ng-controller="promesa2Ctrl as prm2Ctrl">Solución</div>-->
+        <!--<div ng-controller="promesa3Ctrl as prm3Ctrl">Paso de resolve</div>-->
+        <!--<div ng-controller="promesa4Ctrl as prm4Ctrl">Varias promesas</div>-->
+        <!--<div ng-controller="promesa5Ctrl as prm5Ctrl">Error promesas</div>-->
+        <!--<div ng-controller="promesa6Ctrl as prm6Ctrl">Promise.all = arreglo de promesas</div>-->
+        <!--<div ng-controller="promesa7Ctrl as prm7Ctrl">Promise.race = la primera promesa resuelta</div>-->
+        <div ng-controller="promesa8Ctrl as prm8Ctrl">Random</div>
 
     </body>
 </html>
