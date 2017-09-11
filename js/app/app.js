@@ -3,7 +3,7 @@
 
     angular
         .module('myApp', [
-        'formModule'
+        'bookMdl'
     ]);
 
 }());
