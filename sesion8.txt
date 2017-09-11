@@ -1,5 +1,8 @@
 Sesión 8 
 
+Promesas, then, resolve, error, throw - varias promesas - promise:race/all - Math.random - $timeout
+
+
 JS asíncrono: deslace de tiempo y ejecución,cuando se lema a una función y el JS asume 
 
 que se ejecutó y no espera el resultado. (peticiones al servidor)
